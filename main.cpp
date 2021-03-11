@@ -1,13 +1,13 @@
 #include "TXlib.h"
 
-int SpruceDraw();
+void SpruceDraw();
 void BunDraw();
 void FoxDraw();
 void WolfDraw();
 void HareDraw();
 void HomeDraw();
 
-int main()
+void main()
     {
     txCreateWindow (600, 600);
     txSetFillColor (TX_WHITE);
@@ -22,9 +22,7 @@ int main()
     WolfDraw();
     HareDraw();
     HomeDraw();
-
-    return 0;
-     }
+    }
 
 int SpruceDraw()
     {
@@ -122,7 +120,7 @@ void HomeDraw()
     txSetColor (TX_YELLOW);
     POINT home2[] = { {200, 100}, {300, 5}, {400, 100} };
     txPolygon (home2, 3);
-    txTextOut (235, 115, "–Œ—œŒ“–≈¡Õ¿ƒ«Œ–");
+    txTextOut (235, 115, "√ê√é√ë√è√é√í√ê√Ö√Å√ç√Ä√Ñ√á√é√ê");
     txSetFillColor (TX_BLACK);
     txCircle (300, 200, 30);
     txSetFillColor (TX_YELLOW);
