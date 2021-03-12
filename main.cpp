@@ -24,7 +24,7 @@ void main()
     HomeDraw();
     }
 
-int SpruceDraw()
+void SpruceDraw()
     {
     txSetFillColor (TX_GREEN);
     POINT spruce1[] = { {10, 100}, {50, 60}, {90, 100} };
@@ -35,7 +35,6 @@ int SpruceDraw()
     txPolygon (spruce3, 3);
     POINT spruce4[] = { {10, 220}, {90, 220}, {50, 180} };
     txPolygon (spruce4, 3);
-    return 0;
     }
 
 void BunDraw()
