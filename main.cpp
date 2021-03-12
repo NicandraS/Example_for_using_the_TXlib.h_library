@@ -7,7 +7,7 @@ void WolfDraw();
 void HareDraw();
 void HomeDraw();
 
-void main()
+int main()
     {
     txCreateWindow (600, 600);
     txSetFillColor (TX_WHITE);
@@ -22,6 +22,7 @@ void main()
     WolfDraw();
     HareDraw();
     HomeDraw();
+    return 0;
     }
 
 void SpruceDraw()
